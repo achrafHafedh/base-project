@@ -1,0 +1,59 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html,
+body {
+  color: rgb(var(--foreground-rgb));
+	height: 100%;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0 !important;
+}
+
+#reader__scan_region > video {
+  height: 300px;
+}
+
+#html5-qrcode-button-camera-stop, #html5-qrcode-button-camera-start, #html5-qrcode-button-camera-permission {
+  padding: 10px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+  display: none;
+}
+
+header {
+  justify-content: space-between;
+  /* height:50px; */
+}
+
+header.end {
+  justify-content: end;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
